@@ -1,0 +1,16 @@
+{
+  "name": "RAM Web Services",
+  "short_name": "RAM Web Services",
+  "lang": "es",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f54c40",
+  "background_color": "#fff",
+  "description": "RAM Web Services.",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png"
+    }
+  ]
+}

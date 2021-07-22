@@ -1,0 +1,26 @@
+extends:
+  - plugin:vue/recommended
+rules:
+  semi:
+    - error
+    - never
+  indent:
+    - error
+    - 2
+  comma-dangle:
+    - error
+    - always-multiline
+  no-alert: "off"
+  no-param-reassign:
+    - error
+    - props: true
+      ignorePropertyModificationsFor:
+        - state
+  no-underscore-dangle:
+    - error
+    - allowAfterThis: true
+  no-restricted-globals: "off"
+env:
+  browser: true
+globals:
+  pdfMake: readonly

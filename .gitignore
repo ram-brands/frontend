@@ -1,0 +1,11 @@
+# JavaScript.
+node_modules
+
+# Editor configuration.
+.vscode
+
+# Operating system.
+.DS_Store
+
+# Builds.
+dist

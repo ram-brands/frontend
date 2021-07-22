@@ -1,0 +1,27 @@
+name: checks
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          yarn global add @vue/cli
+          yarn install --frozen-lockfile
+
+      - name: Lint with ESLint and Stylelint
+        run: yarn lint --no-fix
